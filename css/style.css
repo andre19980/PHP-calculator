@@ -1,0 +1,88 @@
+body {
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid#d7d9dd;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    background-color: #FFFFFF;
+    border: 1px solid #d7d9dd;
+    border-radius: 10px;
+    width:170px;
+    height: 50px;
+}
+
+.operator {
+    background-color: #FFFFFF;
+    border: 1px solid #d7d9dd;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background-color: #d7d9dd;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+[equal] {
+    background-color: #4d8bf1;
+    color: white;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: auto 40px;
+    height:124px;
+    border: 1px solid #d7d9dd;
+    border-radius: 10px;
+}
+
+.text {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    justify-self: end;
+    padding: 10px;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+  
